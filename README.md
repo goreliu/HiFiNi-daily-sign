@@ -35,4 +35,3 @@ bbs_token=R74mq3S2uXXXXXXXXXXX66nLnTW7DFOV;
 Renew:2024/8/19
 
 Based on [HiFiNi-Auto-Sign](https://github.com/Xramas/HiFiNi-Auto-Sign)
-
