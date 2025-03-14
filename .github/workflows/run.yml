@@ -1,4 +1,4 @@
-name: HiFiNi 自动签到2
+name: HiFiNi 自动签到
  
 on:
     push:
@@ -17,9 +17,13 @@ jobs:
               uses: actions/setup-go@v3
               with:
                 go-version: '^1.14'
-            - name: HIFINI 自动签到
+            - name: HIFINI 自动签到 1
               env:
                 COOKIE: ${{ secrets.COOKIE }}
-                SIGN_KEY: ${{ secrets.SIGN_KEY }}
+                DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
+              run: go run main.go
+            - name: HIFINI 自动签到 2
+              env:
+                COOKIE: ${{ secrets.COOKIE2 }}
                 DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
               run: go run main.go
