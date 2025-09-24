@@ -22,8 +22,8 @@ jobs:
                 COOKIE: ${{ secrets.COOKIE }}
                 DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
               run: go run main.go
-            - name: HIFINI 自动签到 2
-              env:
-                COOKIE: ${{ secrets.COOKIE2 }}
-                DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
-              run: go run main.go
+            #- name: HIFINI 自动签到 2
+            #  env:
+            #    COOKIE: ${{ secrets.COOKIE2 }}
+            #    DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
+            #  run: go run main.go
